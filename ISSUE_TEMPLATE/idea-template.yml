@@ -1,0 +1,39 @@
+name: 💡 New Idea
+description: Suggest a new product idea or customer-requested feature
+title: "[IDEA] "
+labels: [idea, needs-triage]
+assignees: []
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Idea Title
+      placeholder: e.g. “Automated PDF Parser”
+  - type: textarea
+    id: details
+    attributes:
+      label: Description
+      description: What is the idea and what problem does it solve?
+  - type: textarea
+    id: customers
+    attributes:
+      label: Interested Customers
+      description: Who is asking for this? Mention names or segments.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Sales/Business Priority
+      options:
+        - High
+        - Medium
+        - Low
+  - type: input
+    id: source
+    attributes:
+      label: Source of Idea
+      placeholder: e.g. “Customer X call”, “Sales team”, “Competitor Y”
+  - type: textarea
+    id: success
+    attributes:
+      label: Success Criteria
+      description: How will we know if it works?
